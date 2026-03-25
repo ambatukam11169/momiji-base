@@ -10,6 +10,12 @@ const { Boom } = require("@hapi/boom");
 const fs = require("fs-extra");
 const path = require("path");
 const config = require("./settings");
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => res.send('Bot WA Online!'));
+app.listen(port, () => console.log(`Server listen on port ${port}`));
 
 // --- Inisialisasi Database ---
 if (!fs.existsSync(config.dbPath)) fs.writeJsonSync(config.dbPath, { users: {} });
