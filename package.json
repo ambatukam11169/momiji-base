@@ -1,0 +1,16 @@
+{
+  "name": "momiji-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.6.0",
+    "pino": "^8.19.0",
+    "fs-extra": "^11.1.1",
+    "@hapi/boom": "^10.0.1",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
